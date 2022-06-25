@@ -1,11 +1,12 @@
 import express from "express";
-
 import cors from "cors";
 import dataRoute from "./routes/data.route";
 
 const app = express();
+const PORT = process.env.PORT || 4000
 
-app.listen(4000);
+
+app.listen(PORT);
 
 const corsOptions = {
   origin: "http://localhost:3000",
@@ -13,6 +14,6 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-console.log("Server on PORT:", 4000);
+console.log("Server on PORT:", PORT);
 
 app.use("/api/data", dataRoute);
