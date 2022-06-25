@@ -12,7 +12,7 @@ const corsOptions = {
   origin: "http://localhost:3000",
 };
 
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 console.log("Server on PORT:", PORT);
 
