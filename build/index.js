@@ -13,7 +13,7 @@ var PORT = process.env.PORT || 4000;
 app.listen(PORT);
 var corsOptions = {
   origin: "http://localhost:3000"
-};
-app.use((0, _cors["default"])(corsOptions));
+}; //app.use(cors(corsOptions));
+
 console.log("Server on PORT:", PORT);
 app.use("/api/data", _data["default"]);
