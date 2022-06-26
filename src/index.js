@@ -9,10 +9,10 @@ const PORT = process.env.PORT || 4000
 app.listen(PORT);
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://dolarcostaverage.netlify.app",
 };
 
-//app.use(cors(corsOptions));
+app.use(cors(corsOptions));
 
 console.log("Server on PORT:", PORT);
 
