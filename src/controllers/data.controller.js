@@ -11,7 +11,7 @@ export const getDataBySymbol = async (req, res) => {
       return res.status(200).json(data);
     } catch (error) {
       console.error("The query have an Error" + Object.values(error));
-       res.status(400).end();
+      return res.status(400).end();
     }
   }
 };
